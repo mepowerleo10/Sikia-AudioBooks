@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Sikia AudioBooks</string>
+    <string name="app_string">Sikia</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_phone_no">Namba ya Simu</string>
+    <string name="prompt_password">Msimbo</string>
+    <string name="action_sign_in">Ingia</string>
+    <string name="action_sign_up">Jisajili</string>
+    <string name="welcome">"Karibu !"</string>
+    <string name="invalid_username">Sio jina sahihi</string>
+    <string name="invalid_password">Msimbo unatakiwa kuwa herufi 5 au zaidi</string>
+    <string name="login_failed">"Imeshindikana Kuingia"</string>
+    <string name="action_skip">Ruka</string>
+    <string name="title_library">Library</string>
+    <string name="purchase_thanks">Thank you for purchasing</string>
+</resources>

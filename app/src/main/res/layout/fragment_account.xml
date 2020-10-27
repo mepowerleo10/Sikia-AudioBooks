@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.account.AccountFragment">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:isScrollContainer="true"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginVertical="10dp"
+                android:text="@string/title_account"
+                android:textColor="@color/textLightDark"
+                android:textSize="@dimen/large_font" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:background="@drawable/rounded_card_light"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <!-- Hidden till user is logged in -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/account_name_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/account_name"
+                    android:visibility="gone"
+                    app:endIconDrawable="@drawable/ic_baseline_edit_24"
+                    app:endIconMode="custom"
+                    app:hintAnimationEnabled="true"
+                    app:hintTextColor="@color/textDark"
+                    app:startIconDrawable="@drawable/ic_baseline_account_circle_24">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/account_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/textLightDark"
+                        android:inputType="textAutoComplete"
+                        android:textCursorDrawable="@null" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/account_email"
+                    app:endIconDrawable="@drawable/ic_baseline_edit_24"
+                    app:endIconMode="custom"
+                    app:hintAnimationEnabled="true"
+                    app:hintTextColor="@color/textDark"
+                    app:startIconDrawable="@drawable/ic_baseline_alternate_email_24">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/account_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/textLightDark"
+                        android:inputType="textEmailAddress"
+                        android:textCursorDrawable="@null" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- Hidden till user is logged in -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/account_phone_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/account_phone"
+                    android:visibility="gone"
+                    app:endIconDrawable="@drawable/ic_baseline_edit_24"
+                    app:endIconMode="custom"
+                    app:hintAnimationEnabled="true"
+                    app:hintTextColor="@color/textDark"
+                    app:startIconDrawable="@drawable/ic_baseline_local_phone_24">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/account_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/textLightDark"
+                        android:inputType="phone"
+                        android:textCursorDrawable="@null" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/account_password"
+                    app:boxBackgroundColor="@color/cardOlive"
+                    app:endIconDrawable="@drawable/ic_baseline_edit_24"
+                    app:endIconMode="custom"
+                    app:hintAnimationEnabled="true"
+                    app:hintTextColor="@color/textDark"
+                    app:startIconDrawable="@drawable/ic_baseline_lock_24">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/account_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/textLightDark"
+                        android:inputType="textPassword"
+                        android:textCursorDrawable="@null" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                    android:id="@+id/prefs_login_logout"
+                    style="@style/OpaqueButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:drawableRight="@drawable/ic_baseline_arrow_forward_ios_24"
+                    android:text="@string/account_login" />
+
+                <Button
+                    android:id="@+id/prefs_save"
+                    style="@style/OpaqueButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_baseline_check_24"
+                    android:text="@string/account_save"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <!-- Hidden till user is logged in -->
+            <TextView
+                android:id="@+id/prefs_membership_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/account_membership"
+                android:textSize="@dimen/normal_font"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_card_light"
+                android:orientation="vertical">
+
+                <!-- Hidden till user is logged in -->
+                <LinearLayout
+                    android:id="@+id/prefs_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <Button
+                        android:id="@+id/prefs_details"
+                        style="@style/AccountButtons"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/opaque_button_margin"
+                        android:text="@string/account_details" />
+
+                    <View
+                        style="@style/Separator"
+                        android:layout_marginHorizontal="22dp" />
+
+                    <Button
+                        android:id="@+id/prefs_history"
+                        style="@style/AccountButtons"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/opaque_button_margin"
+                        android:text="@string/account_history" />
+
+                    <View
+                        style="@style/Separator"
+                        android:layout_marginHorizontal="22dp" />
+
+                    <Button
+                        android:id="@+id/prefs_sound_settings"
+                        style="@style/AccountButtons"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/opaque_button_margin"
+                        android:text="@string/account_sound_settings" />
+
+                    <View
+                        style="@style/Separator"
+                        android:layout_marginHorizontal="22dp" />
+                </LinearLayout>
+
+
+                <Button
+                    android:id="@+id/prefs_about_us"
+                    style="@style/AccountButtons"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/opaque_button_margin"
+                    android:text="@string/account_about" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

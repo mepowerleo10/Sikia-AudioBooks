@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.collection.CollectionFragment">
+
+    <LinearLayout
+        android:layout_margin="8dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_margin="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/large_font"
+            android:text="@string/title_library"
+            android:textStyle="bold"></TextView>
+
+        <View
+            android:layout_marginHorizontal="6dp"
+            style="@style/Separator" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:textSize="@dimen/large_font"
+            android:text="@string/title_collection"
+            android:drawablePadding="8dp"
+            android:drawableLeft="@drawable/ic_baseline_format_list_bulleted_24" />
+
+        <View
+            style="@style/Separator"
+            android:layout_marginHorizontal="6dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/title_audiobooks"
+            android:textSize="@dimen/normal_font"
+            android:layout_margin="6dp" />
+
+        <View
+            android:layout_marginHorizontal="6dp"
+            style="@style/Separator" />
+
+        <GridView
+            android:id="@+id/collection_books_grid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="auto_fit">
+
+        </GridView>
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

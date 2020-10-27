@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#6200EE</color>
-    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorPrimary">#a7ac5d</color>
+    <color name="colorPrimaryDark">#898D4A</color>
     <color name="colorAccent">#03DAC5</color>
 
-    <color name="fadingOlive">#</color>
-    <color name="cardOlive">#c3c789</color>
+    <!--    <color name="fadingOlive">#</color>-->
     <color name="pillOlive">#a7ac5d</color>
+    <color name="darkerOlive">#898D4A</color>
+    <color name="absoluteWhite">#ffffff</color>
+    <color name="cardOlive">#C2C689</color>
+    <color name="textDark">#1A1A12</color>
+    <color name="textRed">#EF5350</color>
+    <color name="textLightDark">#424242</color>
 </resources>

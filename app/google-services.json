@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "456762242901",
+    "firebase_url": "https://sikia-audiobooks.firebaseio.com",
+    "project_id": "sikia-audiobooks",
+    "storage_bucket": "sikia-audiobooks.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:456762242901:android:e69f0232000959d5dd21dc",
+        "android_client_info": {
+          "package_name": "com.example.sikiaaudibooks"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "456762242901-tml70vfpsphqmkm6h3h5897guhm8dkuj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJivNkUNwY2Bqh1oQL1kH5-EfZPwBCsS8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "456762242901-tml70vfpsphqmkm6h3h5897guhm8dkuj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:456762242901:android:f79bf6ffa21aca36dd21dc",
+        "android_client_info": {
+          "package_name": "com.example.sikiaaudiobooks"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "456762242901-tml70vfpsphqmkm6h3h5897guhm8dkuj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJivNkUNwY2Bqh1oQL1kH5-EfZPwBCsS8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "456762242901-tml70vfpsphqmkm6h3h5897guhm8dkuj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
